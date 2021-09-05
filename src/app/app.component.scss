@@ -1,0 +1,19 @@
+.content{
+    display:flex;
+    height: 100vh;
+    overflow-x: auto;
+    .column-1{
+        width:200px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .column-2{
+        width:100%;
+        min-width: 100px;
+    }
+    .column-3{
+       width:300px;
+       flex-grow: 0;
+        flex-shrink: 0;
+    }
+}

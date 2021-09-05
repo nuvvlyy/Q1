@@ -1,0 +1,17 @@
+
+<div class="content">
+  <div class="column-1">
+    <input type="number" (change)="handleNumberChange($event)" [(ngModel)]="number"/>
+  </div>
+  <div class="column-2">
+    <select (change)="handleCalculationTypeChange($event.target.value)" [(ngModel)]="calculationType">
+      <option value="isPrime">IsPrime</option>
+      <option value="isFibanacci">IsFibanacci</option>
+    </select>
+  </div>
+  <div class="column-3">
+    {{ checkNumber()}}
+  </div>
+      
+</div>
+
